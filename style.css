@@ -9,6 +9,7 @@ body {
   background-color: var(--preto);
   color: var(--text-light);
   padding-top: 100px;
+  /* background-color: aqua; */
 }
 
 header {
@@ -16,8 +17,8 @@ header {
   background-color: var(--preto);
   color: var(--text-light);
   text-align: center;
+  
 }
-
 
 .bg-roxo {
   background-color: var(--roxo);
@@ -35,6 +36,7 @@ header {
   background-color: var(--roxo);
   color: #fff;
   border: none;
+  transition: background-color 0.3s ease;
 }
 
 .btn-roxo:hover {
@@ -51,7 +53,7 @@ header {
   border: 1px solid var(--roxo);
   border-radius: 10px;
   padding: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 
@@ -89,9 +91,24 @@ header {
   transition: background-color 0.3s ease;
   text-decoration: none;
   cursor: pointer;
+  background-color: var(--roxo);
+  color: #fff;
+  border: none;
 }
 
 .btn-contato:hover {
   background-color: #732d91;
 }
 
+/* Estilo para os cards de empresas */
+.empresa-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 250px;
+
+}
+
+.empresa-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(128, 0, 128, 0.3);
+  height: 250px;
+}
